@@ -3,13 +3,16 @@
 <head>
 	<title>Chessmaestro</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/chessboard-0.3.0.min.css">
 </head>
 <body>
 	<div id="chessboard"></div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="node_modules/chess.js/chess.min.js"></script>
 	<script src="js/chessboard-0.3.0.min.js"></script>
 	<script>
 		var chess = new Chess(),
+			board = ChessBoard("chessboard"),
 			pgnOptions = {
 				"max_width": 5
 			};
