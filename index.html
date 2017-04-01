@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chessmaestro</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="chessboard"></div>
+	<script src="node_modules/chess.js/chess.min.js"></script>
+	<script src="js/chessboard-0.3.0.min.js"></script>
+	<script>
+		var chess = new Chess(),
+			pgnOptions = {
+				"max_width": 5
+			};
+
+		while (!chess.game_over()) {
+		  var moves = chess.moves();
+		  var move = moves[Math.floor(Math.random() * moves.length)];
+		  chess.move(move);
+		}
+		document.write(chess.pgn(pgnOptions));
+	</script>
+</body>
+</html>
