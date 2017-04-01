@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/chessboard-0.3.0.min.css">
 </head>
 <body>
-	<div id="chessboard"></div>
+	<div id="board"></div>
 	<button onClick="moveRandomPiece()">Make a random move</button>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="node_modules/chess.js/chess.min.js"></script>
@@ -14,16 +14,30 @@
 	<script>
 		var chessGame = new Chess(),
 			boardOptions = {
-				"draggable": true
+				"draggable": true,
+				"position": "start",
+				"onDrop": reactToMove
 			}
-			board = ChessBoard("chessboard", boardOptions);
-			board.start();
+			board = ChessBoard("board", boardOptions);
 
 		function moveRandomPiece() {
 			var moves = chessGame.moves();
 			var move = moves[Math.floor(Math.random() * moves.length)];
 			chessGame.move(move);
 			board.position(chessGame.fen());
+		}
+
+		function reactToMove(source, target) {
+			var move = chessGame.move({
+				"from": source,
+				"to": target
+			});
+
+			if (move === null) {
+				return "snapback";
+			}
+
+			moveRandomPiece();
 		}
 	</script>
 </body>
