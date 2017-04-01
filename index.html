@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chessmaestro</title>
+	<title>Chessmaestro 5000</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/chessboard-0.3.0.min.css">
 </head>
 <body>
 	<div id="chessboard"></div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<button onClick="moveRandomPiece()">Make a random move</button>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="node_modules/chess.js/chess.min.js"></script>
 	<script src="js/chessboard-0.3.0.min.js"></script>
 	<script>
-		var chess = new Chess(),
-			board = ChessBoard("chessboard"),
-			pgnOptions = {
-				"max_width": 5
-			};
+		var chessGame = new Chess(),
+			boardOptions = {
+				"draggable": true
+			}
+			board = ChessBoard("chessboard", boardOptions);
+			board.start();
 
-		while (!chess.game_over()) {
-		  var moves = chess.moves();
-		  var move = moves[Math.floor(Math.random() * moves.length)];
-		  chess.move(move);
+		function moveRandomPiece() {
+			var moves = chessGame.moves();
+			var move = moves[Math.floor(Math.random() * moves.length)];
+			chessGame.move(move);
+			board.position(chessGame.fen());
 		}
-		document.write(chess.pgn(pgnOptions));
 	</script>
 </body>
 </html>
