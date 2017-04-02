@@ -12,7 +12,7 @@
 	<script src="node_modules/chess.js/chess.min.js"></script>
 	<script src="js/chessboard-0.3.0.min.js"></script>
 	<script>
-		var chessGame = new Chess(),
+		var game = new Chess(),
 			boardOptions = {
 				"draggable": true,
 				"position": "start",
@@ -21,21 +21,32 @@
 			board = ChessBoard("board", boardOptions);
 
 		function moveRandomPiece() {
-			var moves = chessGame.moves();
+			var moves = game.moves();
 			var move = moves[Math.floor(Math.random() * moves.length)];
-			chessGame.move(move);
-			board.position(chessGame.fen());
+			game.move(move);
+
+			board.position(game.fen());
+
+			if (game.in_checkmate() === true) {
+				alert("Checkmate! You lose!");
+			}
 		}
 
 		function reactToMove(source, target) {
-			var move = chessGame.move({
+			var move = game.move({
 				"from": source,
-				"to": target
+				"to": target,
+				"promotion": "q"
 			});
 
 			if (move === null) {
 				return "snapback";
 			}
+			if (game.in_checkmate() === true) {
+				alert("Checkmate! You win!");
+				return;
+			}
+
 			window.setTimeout(moveRandomPiece, 250);
 		}
 	</script>
