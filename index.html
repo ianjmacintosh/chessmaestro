@@ -12,6 +12,7 @@
 	<script src="node_modules/chess.js/chess.min.js"></script>
 	<script src="js/chessboard-0.3.0.min.js"></script>
 	<script>
+	(function() {
 		var game = new Chess(),
 			boardOptions = {
 				"draggable": true,
@@ -49,6 +50,7 @@
 
 			window.setTimeout(moveRandomPiece, 250);
 		}
+	}());
 	</script>
 </body>
 </html>
