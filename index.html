@@ -26,6 +26,14 @@
 			var move = moves[Math.floor(Math.random() * moves.length)];
 			game.move(move);
 
+			// Make a list of all the moves
+			// Get the current board position
+			// Assign a score to the current board position, reset the board "high score"
+			// Try out the first move
+			// Compare the move to the "high score" -- if greater, assign move as "best move," otherwise do nothing
+			// Cycle through list of moves
+			// Once all moves have been cycled through, perform the best move
+
 			board.position(game.fen());
 
 			if (game.in_checkmate() === true) {
