@@ -62,39 +62,51 @@
 
 		enemyPieces.forEach(function (piece) {
 			var re = new RegExp(piece.indicator, "g"),
-				numberOfPieces = position.match(re).length,
+				matchedPieces = position.match(re) || [], // Protect against no matches
+				numberOfPieces = matchedPieces.length,
 				valueOfPiece = piece.value;
+
 			positionScore += numberOfPieces * valueOfPiece;
-			console.log("I see %s %ss, they're each worth %s, score is %s", numberOfPieces, piece.indicator, valueOfPiece, positionScore);
 		});
 
 		return positionScore;
 	}
 
+	function getBestMove(position) {
+		var chess = new Chess(),
+			moves = [],
+			bestMoveScore,
+			bestMove;
+
+		chess.load(position);
+
+		moves = chess.moves();
+
+		moves.forEach(function(move) {
+			chess.move(move);
+
+			var thisMoveScore = getPositionScore(chess.ascii());
+			console.log("Score: " + thisMoveScore);
+
+			if (thisMoveScore > bestMoveScore || typeof bestMoveScore === "undefined") {
+				bestMoveScore = thisMoveScore;
+				bestMove = move;
+
+				console.log(bestMove);
+			};
+
+			chess.undo();
+		});
+
+		return bestMove;
+	}
+
 	function moveRandomPiece() {
-		// Make a list of all the moves
-		var moves = chess.moves(),
-
 		// Get the current board position
-			boardPositionAscii = chess.ascii(),
-			boardPositionFen = chess.fen();
-
-		console.log(chess.ascii());
-
-		// Assign a score to the current board position, reset the board "high score"
-			bestPosition = getPositionScore(boardPositionAscii);
-			console.log("Current board scores a " + bestPosition);
-			// The score is based on how many enemy (human) pieces are on the board
-
-		// Try out the first move
-		// Compare the move to the "high score" -- if greater, assign move as "best move," otherwise do nothing
-		// Cycle through list of moves
-		var move = moves[Math.floor(Math.random() * moves.length)];
+		var boardPositionFen = chess.fen();
 
 		// Once all moves have been cycled through, perform the best move
-		chess.move(move);
-
-		board.position(chess.fen());
+		chess.move(getBestMove(chess.fen()));
 
 		if (chess.in_checkmate() === true) {
 			alert("Checkmate! You lose!");
