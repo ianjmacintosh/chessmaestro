@@ -19,7 +19,7 @@
 				"value": 3
 			},
 			{
-				"indicator": "B"
+				"indicator": "B",
 				"value": 3
 			},
 			{
