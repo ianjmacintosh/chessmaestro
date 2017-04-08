@@ -62,8 +62,8 @@
 
 		enemyPieces.forEach(function (piece) {
 			var re = new RegExp(piece.indicator, "g"),
-				matchedPieces = position.match(re) || [], // Protect against no matches
-				numberOfPieces = matchedPieces.length,
+				matchedPieces = position.match(re),
+				numberOfPieces = matchedPieces !== null ? matchedPieces.length : 0,
 				valueOfPiece = piece.value;
 
 			positionScore += numberOfPieces * valueOfPiece;
@@ -105,8 +105,11 @@
 		// Get the current board position
 		var boardPositionFen = chess.fen();
 
-		// Once all moves have been cycled through, perform the best move
-		chess.move(getBestMove(chess.fen()));
+		// Perform best move
+		chess.move(getBestMove(boardPositionFen));
+
+		// Update the board
+		board.position(chess.fen());
 
 		if (chess.in_checkmate() === true) {
 			alert("Checkmate! You lose!");
