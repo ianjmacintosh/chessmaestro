@@ -7,22 +7,61 @@
 		}
 		board = ChessBoard("board", boardOptions);
 
+	function getPositionScore(position) {
+		var positionScore = 0,
+			enemyPieces = [
+			{
+				"indicator": "P",
+				"value": 1
+			},
+			{
+				"indicator": "N",
+				"value": 3
+			},
+			{
+				"indicator": "B"
+				"value": 3
+			},
+			{
+				"indicator": "R",
+				"value": 5
+			},
+			{
+				"indicator": "Q",
+				"value": 9
+			},
+			{
+				"indicator": "K",
+				"value": 100
+			}
+		];
+
+		enemyPieces.forEach(function (piece) {
+			var re = new RegExp(piece.indicator, "g");
+			positionScore += position.match(re).length * piece.value;
+		});
+
+		return positionScore;
+	}
+
 	function moveRandomPiece() {
 		// Make a list of all the moves
-		var moves = chess.moves();
+		var moves = chess.moves(),
 
 		// Get the current board position
-		// A few options here for what could be a good board position:
-		// ## chessboard.js
-		// ## chess.js
-		var move = moves[Math.floor(Math.random() * moves.length)];
-		chess.move(move);
+			boardPosition = chess.ascii();
 
 		// Assign a score to the current board position, reset the board "high score"
+
+			// The score is based on how many enemy (human) pieces are on the board
+
 		// Try out the first move
 		// Compare the move to the "high score" -- if greater, assign move as "best move," otherwise do nothing
 		// Cycle through list of moves
+		var move = moves[Math.floor(Math.random() * moves.length)];
+
 		// Once all moves have been cycled through, perform the best move
+		chess.move(move);
 
 		board.position(chess.fen());
 
