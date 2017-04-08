@@ -8,37 +8,64 @@
 		board = ChessBoard("board", boardOptions);
 
 	function getPositionScore(position) {
-		var positionScore = 0,
+		var positionScore = -3, // This is silly, but it's to offset the "b" that indicates the second file
 			enemyPieces = [
 			{
 				"indicator": "P",
-				"value": 1
+				"value": -1
 			},
 			{
 				"indicator": "N",
-				"value": 3
+				"value": -3
 			},
 			{
 				"indicator": "B",
-				"value": 3
+				"value": -3
 			},
 			{
 				"indicator": "R",
-				"value": 5
+				"value": -5
 			},
 			{
 				"indicator": "Q",
-				"value": 9
+				"value": -9
 			},
 			{
 				"indicator": "K",
+				"value": -100
+			},
+			{
+				"indicator": "p",
+				"value": 1
+			},
+			{
+				"indicator": "n",
+				"value": 3
+			},
+			{
+				"indicator": "b",
+				"value": 3
+			},
+			{
+				"indicator": "r",
+				"value": 5
+			},
+			{
+				"indicator": "q",
+				"value": 9
+			},
+			{
+				"indicator": "k",
 				"value": 100
 			}
 		];
 
 		enemyPieces.forEach(function (piece) {
-			var re = new RegExp(piece.indicator, "g");
-			positionScore += position.match(re).length * piece.value;
+			var re = new RegExp(piece.indicator, "g"),
+				numberOfPieces = position.match(re).length,
+				valueOfPiece = piece.value;
+			positionScore += numberOfPieces * valueOfPiece;
+			console.log("I see %s %ss, they're each worth %s, score is %s", numberOfPieces, piece.indicator, valueOfPiece, positionScore);
 		});
 
 		return positionScore;
@@ -49,10 +76,14 @@
 		var moves = chess.moves(),
 
 		// Get the current board position
-			boardPosition = chess.ascii();
+			boardPositionAscii = chess.ascii(),
+			boardPositionFen = chess.fen();
+
+		console.log(chess.ascii());
 
 		// Assign a score to the current board position, reset the board "high score"
-
+			bestPosition = getPositionScore(boardPositionAscii);
+			console.log("Current board scores a " + bestPosition);
 			// The score is based on how many enemy (human) pieces are on the board
 
 		// Try out the first move
