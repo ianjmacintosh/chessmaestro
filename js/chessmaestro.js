@@ -75,7 +75,8 @@
 	function getBestMove(position) {
 		var chess = new Chess(),
 			moves = [],
-			bestMoveScore,
+			bestMoveScore = -9999,
+			bestMoves = [],
 			bestMove;
 
 		chess.load(position);
@@ -86,27 +87,23 @@
 			chess.move(move);
 
 			var thisMoveScore = getPositionScore(chess.ascii());
-			console.log("Score: " + thisMoveScore);
 
-			if (thisMoveScore > bestMoveScore || typeof bestMoveScore === "undefined") {
+			if (thisMoveScore >= bestMoveScore) {
 				bestMoveScore = thisMoveScore;
-				bestMove = move;
-
-				console.log(bestMove);
+				bestMoves.push(move);
 			};
 
 			chess.undo();
 		});
 
+		bestMove = bestMoves[Math.floor(Math.random() * bestMoves.length + 1)];
+
 		return bestMove;
 	}
 
 	function moveRandomPiece() {
-		// Get the current board position
-		var boardPositionFen = chess.fen();
-
 		// Perform best move
-		chess.move(getBestMove(boardPositionFen));
+		chess.move(getBestMove(chess.fen()));
 
 		// Update the board
 		board.position(chess.fen());
