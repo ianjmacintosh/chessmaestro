@@ -1,0 +1,664 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bestMove",
+				"bestMoveScore"
+			],
+			[
+				"th",
+				"thisMoveScore"
+			],
+			[
+				"move",
+				"move"
+			],
+			[
+				"value",
+				"valueOfPiece"
+			],
+			[
+				"best",
+				"bestPosition"
+			],
+			[
+				"boardPosition",
+				"boardPositionAscii"
+			],
+			[
+				"get",
+				"getPositionScore"
+			],
+			[
+				"enemy",
+				"enemyPieces"
+			],
+			[
+				"pro",
+				"propName"
+			],
+			[
+				"last",
+				"lastPageNumber"
+			],
+			[
+				"current",
+				"currentPageNumber"
+			],
+			[
+				"cur",
+				"currentPageNumber"
+			],
+			[
+				"page",
+				"pagesOfIssues"
+			],
+			[
+				"issue",
+				"issuesCards"
+			],
+			[
+				"mysqli_conn",
+				"mysqli_connect_errno"
+			],
+			[
+				"default_",
+				"default_password"
+			],
+			[
+				"defa",
+				"default_password"
+			],
+			[
+				"get_defined_",
+				"get_defined_vars"
+			],
+			[
+				"val",
+				"val1"
+			],
+			[
+				"cats",
+				"cats"
+			],
+			[
+				"work",
+				"workoutMarkup"
+			],
+			[
+				"exerc",
+				"exerciseHTML"
+			],
+			[
+				"exer",
+				"exerciseHTML"
+			],
+			[
+				"exe",
+				"exerciseHTML"
+			],
+			[
+				"currentExer",
+				"currentExerciseSetInfo"
+			],
+			[
+				"set",
+				"setIndex"
+			],
+			[
+				"data",
+				"dataset"
+			],
+			[
+				"e",
+				"exerciseMarkup"
+			],
+			[
+				"ex",
+				"exerciseIndex"
+			],
+			[
+				"workout",
+				"workoutMarkup"
+			],
+			[
+				"exercise",
+				"exerciseHTML"
+			],
+			[
+				"resist",
+				"resistance"
+			],
+			[
+				"re",
+				"resistance"
+			],
+			[
+				"curre",
+				"currentExercise"
+			],
+			[
+				"currentS",
+				"currentSetIndex"
+			],
+			[
+				"curr",
+				"currentSetNumber"
+			],
+			[
+				"resistance",
+				"resistanceUnits"
+			],
+			[
+				"getElementBy",
+				"getElementsByTagName"
+			],
+			[
+				"resi",
+				"resistanceUnits"
+			],
+			[
+				"cha",
+				"chapterHTML"
+			],
+			[
+				"chapter",
+				"chapterJSON"
+			],
+			[
+				"chap",
+				"chapterJSON"
+			],
+			[
+				"no",
+				"noscript"
+			],
+			[
+				"workou",
+				"workoutObject"
+			],
+			[
+				"worko",
+				"workoutMarkup"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 546,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/chessmaestro.js",
+			"settings":
+			{
+				"buffer_size": 2324,
+				"line_ending": "Unix",
+				"name": "chessmaestro.js"
+			}
+		},
+		{
+			"file": "node_modules/chess.js/chess.min.js",
+			"settings":
+			{
+				"buffer_size": 15552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "main.css"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 96.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ian/projects/personal/chessmaestro",
+		"/Users/ian/projects/personal/chessmaestro/js",
+		"/Users/ian/projects/personal/chessmaestro/js/chessboardjs-0.3.0/css",
+		"/Users/ian/projects/personal/chessmaestro/js/chessboardjs-0.3.0/js",
+		"/Users/ian/projects/personal/chessmaestro/node_modules",
+		"/Users/ian/projects/personal/chessmaestro/node_modules/chess.js"
+	],
+	"file_history":
+	[
+		"/Users/ian/projects/personal/chessmaestro/js/chessboardjs-0.3.0/css/chessboard-0.3.0.min.css",
+		"/Users/ian/projects/personal/chessmaestro/index.html",
+		"/Users/ian/projects/personal/issue-viewer/public/issues",
+		"/Users/ian/projects/personal/issue-viewer/src/App.test.js",
+		"/Users/ian/projects/personal/issue-viewer/node_modules/react-scripts/node_modules/asynckit/lib/state.js",
+		"/Users/ian/projects/personal/issue-viewer/src/IssueList.js",
+		"/Users/ian/projects/personal/comments-tutorial/README.md",
+		"/Users/ian/projects/personal/comments-tutorial/foo.json",
+		"/Users/ian/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ian/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/ian/projects/personal/comments-tutorial/src/CommentBox.js",
+		"/Users/ian/Sites/false_positives.php",
+		"/Users/ian/Sites/validation_functions.php",
+		"/Users/ian/Sites/included_functions.php",
+		"/Users/ian/Sites/databases_insert.php",
+		"/Users/ian/Sites/cookies.php",
+		"/Users/ian/Sites/sessions.php",
+		"/Users/ian/Sites/form_singlepage.php",
+		"/Users/ian/Sites/redirect.php",
+		"/Users/ian/Sites/validation_errors.php",
+		"/Users/ian/Sites/form_single.php",
+		"/Users/ian/Sites/basic.html",
+		"/Users/ian/Sites/included_header.php",
+		"/Users/ian/Sites/includes.php",
+		"/Users/ian/Sites/first_page.php",
+		"/Users/ian/Sites/second_page.php",
+		"/Users/ian/Sites/htmlencoding.php",
+		"/Users/ian/Sites/functions_multiplereturns.php",
+		"/Users/ian/Sites/functions_scope.php",
+		"/Users/ian/Sites/functions_defaults.php",
+		"/Users/ian/Sites/debugging.php",
+		"/Users/ian/Sites/functions_arguments.php",
+		"/Users/ian/Sites/function_returnvalues.php",
+		"/Users/ian/Sites/foreachloops.php",
+		"/Users/ian/Sites/logical.php",
+		"/Users/ian/Sites/whileloops.php",
+		"/Users/ian/Sites/continue.php",
+		"/Users/ian/Sites/pointers.php",
+		"/Users/ian/Sites/functions_defining.php",
+		"/Users/ian/Sites/type_casting.php",
+		"/Users/ian/Sites/constants.php",
+		"/Users/ian/Sites/null.php",
+		"/Users/ian/Sites/booleans.php",
+		"/Users/ian/Sites/index.php",
+		"/Users/ian/Sites/strings.php",
+		"/Users/ian/Sites/integers.php",
+		"/Users/ian/Sites/floats.php",
+		"/Users/ian/Sites/array.php",
+		"/Users/ian/Sites/assoc_arrays.php",
+		"/Users/ian/Sites/array_functions.php",
+		"/Users/ian/projects/spade/health/deploy/workout.php",
+		"/Users/ian/projects/spade/health/deploy/index.php",
+		"/Users/ian/projects/spade/health/composer.json",
+		"/Users/ian/projects/spade/health/vendor/autoload.php",
+		"/Users/ian/projects/spade/health/Procfile",
+		"/Users/ian/projects/spade/health/workout1.html",
+		"/Users/ian/projects/spade/health/workout2.html",
+		"/Users/ian/projects/spade/health/js/workout.js",
+		"/Users/ian/projects/spade/health/css/workout.css",
+		"/Users/ian/projects/spade/health/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getBestMove",
+			"positionScore",
+			"\"value\":",
+			"\"value\": ",
+			"1",
+			"game.",
+			"chessGame",
+			"game",
+			"chessGame",
+			"currentEvent",
+			"textarea",
+			"currentEvent",
+			"txt",
+			"onclick",
+			"onClick",
+			"getListOfIssues",
+			".state",
+			"props.page",
+			"pageNumber",
+			"route",
+			"pageNumber",
+			"getListOfIssues",
+			"console.log",
+			"getListOfIssues",
+			"pagesOfIssues",
+			"props",
+			"getQueryVariable",
+			"var",
+			"pageNum",
+			"setState",
+			"urlToCall",
+			"undefined",
+			"allIssuesObject",
+			"Object",
+			"allIssuesObject",
+			"gravatar_id",
+			"error",
+			"success",
+			"cache",
+			"dataType",
+			"url",
+			"CommentBox",
+			"\\n",
+			"·       ",
+			"·       B",
+			"You ",
+			"a float",
+			"integer",
+			"an integer",
+			"classList",
+			" =",
+			"exercise",
+			"[0]",
+			"reps",
+			"currentSetNumber",
+			"workoutJSON.exercises[currentExerciseNumber]",
+			"currentExerciseNumber",
+			"name",
+			"chapters",
+			"chapterJSON",
+			"chapterHTML",
+			"metadata",
+			"chapters"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/chessmaestro.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2324,
+								2324
+							]
+						],
+						"settings":
+						{
+							"auto_name": "chessmaestro.js",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1647.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "node_modules/chess.js/chess.min.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 15552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15552,
+								15552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"auto_name": "main.css",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "chessmaestro.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"foo.j",
+				"foo.json"
+			],
+			[
+				"validation_fu",
+				"validation_functions.php"
+			],
+			[
+				"included",
+				"included_functions.php"
+			],
+			[
+				"redire",
+				"redirect.php"
+			],
+			[
+				"functions",
+				"included_functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
